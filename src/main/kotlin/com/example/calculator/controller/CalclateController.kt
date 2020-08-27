@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping
 
 @Controller
 class CalclateController {
-    @GetMapping("/input")
+    @GetMapping("/") // 修正
     public fun input(model: Model): String {
         model.addAttribute("fdat", FDat());
         return "index";
