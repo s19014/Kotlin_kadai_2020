@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Web電卓</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: #0000ff;
+        }
+        .submit {
+            color: #ff0000;
+        }
+    </style>
 </head>
 <body>
     <h1>Web電卓</h1>
@@ -16,7 +27,7 @@
             <option value="÷">÷</option>
         </select>
         <input type="number" step="0.01" th:field="*{num2}" />
-        <input type="submit" value="計算">
+        <input class="submit" type="submit" value="計算">
     </form>
 </body>
 </html>
